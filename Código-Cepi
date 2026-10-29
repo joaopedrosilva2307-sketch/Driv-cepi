@@ -1,0 +1,137 @@
+IDADE:
+
+using System;
+  class Program 
+  {
+    static void Main()
+    {
+        Console.WriteLine("Informe a sua idade:");
+        int idade = int.Parse(Console.ReadLine());
+        
+        if (idade <= 11)
+        {
+            Console.WriteLine("Criança");
+        }
+        else if (idade <= 17)
+        {
+            Console.WriteLine("Adolescente");
+        }
+        else
+        {
+            Console.WriteLine("Adulto");
+        }
+     }
+  }
+
+
+
+POSITIVO OU NEGATIVO:
+
+using System;
+  class Program 
+  {
+    static void Main()
+    {
+        Console.WriteLine("Informe um numero:");
+        int numero = int.Parse(Console.ReadLine());
+        
+        if (numero >= 0)
+        {
+            Console.WriteLine("Positivo");
+        }
+        else if (numero <=0)
+        {
+            Console.WriteLine("Negativo");
+        }
+        else
+        {
+            Console.WriteLine("Nulo");
+        }
+     }
+  }
+
+NOTA:
+
+using System;
+  class Program 
+  {
+    static void Main()
+    {
+        Console.WriteLine("Informe uma nota:");
+        double nota = double.Parse(Console.ReadLine());
+        
+        if (nota  >= 7)
+        {
+            Console.WriteLine("Aprovado");
+        }
+        else if (nota >=5 && nota <7)
+        {
+            Console.WriteLine("Recuperação");
+        }
+        else
+        {
+            Console.WriteLine("Reprovado");
+        }
+     }
+  }
+        
+IMPAR OU PAR:
+
+  using System;
+  class Program 
+  {
+    static void Main()
+    {
+        Console.WriteLine("Informe um numero:");
+       int numero =int.Parse(Console.ReadLine());
+        
+        if (numero % 2 == 0  )
+        {
+            Console.WriteLine("Par");
+        }
+        else
+        {
+            Console.WriteLine("Impar");
+        }
+     }
+  }
+
+
+MENU DE ATENDIMENTO:
+
+  using System;
+  class Program 
+  {
+    static void Main()
+    {
+        Console.WriteLine("1-Consultar saldo");
+        Console.WriteLine("2-Fazer deposito");
+        Console.WriteLine("3-Sair");
+        Console.WriteLine("Escolha uma opção");
+           
+    int opcao = int.Parse(Console.ReadLine());
+    
+    switch(opcao)
+    {
+        case 1:
+        Console.WriteLine("Você escolheu Consultar saldo");
+        break;
+        
+        case 2:
+        Console.WriteLine("Você escolheu Fazer Deposito");
+        break;
+        
+        case 3:
+        Console.WriteLine("Você escolheu Sair");
+        break;
+        
+        default:
+        Console.WriteLine("Opção inválida");
+        break;
+            } 
+        }
+    }
+
+
+
+
